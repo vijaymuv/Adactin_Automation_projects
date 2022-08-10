@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+  <groups>
+  <define name = "mobiles"> 
+   <include name = "iphone"></include>
+  <include name = "samsung"></include>
+  </define>
+  
+  <run>
+ 
+ <include name="mobiles"></include>
+  </run>
+  
+  </groups>
+ 
+    <classes>
+      <class name="org.testNg.groups_demo"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
