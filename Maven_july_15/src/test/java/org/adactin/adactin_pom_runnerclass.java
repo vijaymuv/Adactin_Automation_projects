@@ -11,6 +11,8 @@ import org.utilityfiles.base_class;
 
 
 public class adactin_pom_runnerclass extends base_class {
+	
+	// Added one line
 	public static WebDriver driver = base_class.Browser_launch("chrome");
 	public static page_object_manager_adactin adactin = new page_object_manager_adactin(driver);
 	public static Logger log = Logger.getLogger(adactin_pom_runnerclass.class);
